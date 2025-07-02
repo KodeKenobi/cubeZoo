@@ -28,7 +28,7 @@ const App = () => {
 };
 
 const AppContent = () => {
-  const { user, isLoading } = useAuth();
+  const { isLoading } = useAuth();
   const location = useLocation();
 
   const hideNav =
