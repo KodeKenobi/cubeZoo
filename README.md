@@ -108,7 +108,7 @@ npm install
 npm run dev
 ```
 
-The frontend will be available at `http://localhost:5173`
+The frontend will be available at `http://localhost:5174`
 
 ### Option 2: Docker Deployment (Recommended)
 
@@ -177,10 +177,14 @@ JWT tokens are stored in `localStorage` for persistence across browser sessions.
 
 ### Testing
 
-The application is structured to support testing:
+A test script is provided to validate the main API flows:
 
-- Backend: pytest can be easily integrated
-- Frontend: React Testing Library can be added
+```bash
+cd backend
+python test_api.py
+```
+
+This script covers registration, login, post CRUD, and ownership rules
 
 ### Environment Variables
 
@@ -227,3 +231,11 @@ This project is licensed under the MIT License.
 - React team for the amazing frontend library
 - Tailwind CSS for the utility-first CSS framework
 - The open-source community for all the amazing tools
+
+## 🌟 Bonus Features
+
+- **Admin User List:** The first registered user is an admin and can view all users via the `/users/` endpoint and the admin panel in the frontend.
+- **Robust UI:** Loading spinners, error messages, and smooth animations for a polished user experience.
+- **Protected Routes:** Client-side route protection ensures only authenticated users can access certain pages.
+
+For more details on the frontend, see [frontend/README.md](./frontend/README.md).

@@ -40,6 +40,8 @@ A complete full-stack blog platform that meets all the requirements from the pra
 - **Protected Routes**: Automatic redirects for unauthenticated users
 - **Robust UI**: Loading indicators, error handling, form validation
 - **User Experience**: Intuitive navigation and conditional rendering
+- **Admin Panel:** The first registered user is an admin and can view all users in the system.
+- **UI/UX Enhancements:** Includes loading indicators, error handling, and smooth animations for a modern user experience.
 
 ## 🏗️ Architecture Overview
 
@@ -134,6 +136,10 @@ npm run dev
 4. API calls include token → Backend validates and authorizes
 5. Ownership verification → Users can only manage their posts
 
+### Testing
+
+- **API Test Script:** Run `python test_api.py` in the backend directory to validate registration, login, CRUD, and ownership logic.
+
 ## 🧪 Testing
 
 The application includes:
@@ -184,5 +190,3 @@ cube-zoo/
 4. **Monitoring**: Logging and health checks
 5. **Testing**: Unit and integration tests
 6. **CI/CD**: Automated deployment pipeline
-
-This implementation demonstrates a solid understanding of full-stack development, security best practices, and modern web technologies. The code is clean, well-documented, and follows industry standards.
